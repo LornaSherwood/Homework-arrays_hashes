@@ -66,8 +66,6 @@ my_hash[3] = "Three"
 # my_hash = {:four => 4}
 my_hash[:four] = 4
 
-puts my_hash
-
 ### C. Given the following data structure:
 
 users = {
@@ -104,13 +102,23 @@ users = {
 
 # 1. Return Jonathan's Twitter handle (i.e. the string `"jonnyt"`)
 
+puts users["Jonathan"][:twitter]
+
 # 2. Return Erik's hometown
+
+puts users["Erik"][:home_town]
 
 # 3. Return the array of Erik's favorite numbers
 
+puts users["Erik"][:favourite_numbers]
+
 # 4. Return the type of Avril's pet Colin
 
+puts users["Avril"][:pets]["colin"]
+
 # 5. Return the smallest of Erik's favorite numbers
+
+puts users["Erik"][:favourite_numbers][0]
 
 # 6. Add the number `7` to Erik's favorite numbers
 
