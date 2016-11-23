@@ -36,12 +36,10 @@ lines << "York Place"
 # 8. Delete 'Edinburgh Park' from the array by index
 
 lines.delete_at(2)
-puts lines
 
 # 9. Reverse the positions of the stops in the array
 
 lines.reverse
-puts lines
 
 ### B. Given the following data structure:
 
@@ -49,9 +47,15 @@ my_hash = {"0" => "Zero", 1 => "One", :two => "Two", "two" => 2}
 
 # 1. How would you return the string `"One"`?
 
+puts my_hash[1]
+
 # 2. How would you return the string `"Two"`?
 
+puts my_hash[:two]
+
 # 3. How would you return the number `2`?
+
+puts my_hash["two"]
 
 # 4. How would you add `{3 => "Three"}` to the hash?
 
